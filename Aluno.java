@@ -1,4 +1,4 @@
-package Aulas_POO.IntroducaoClasses.Escola;
+package Escola.Escola;
 
 public class Aluno extends Pessoa {
     private int anoNascimento;

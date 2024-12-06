@@ -1,10 +1,7 @@
-package Aulas_POO.IntroducaoClasses.Escola;
-
+package Escola.Escola;
 import java.util.ArrayList;
 
 public class Escola {
-    private String nome;
-    private String telefone;
     private ArrayList<Aluno> alunos;
     private ArrayList<Professor> professores;
     private ArrayList<Disciplina> disciplinas;
@@ -15,7 +12,7 @@ public class Escola {
         disciplinas = new ArrayList<>();
     }
 
-    // Métodos para adicionar Aluno e Professor
+    // Adicionar Aluno e Professor
     public boolean adicionarAluno(Aluno aluno) {
         for (Aluno a : alunos) {
             if (a.getCpf().equals(aluno.getCpf())) {
@@ -38,7 +35,7 @@ public class Escola {
         return true;
     }
 
-    // Métodos para buscar por CPF
+    // buscar por CPF
     public Aluno buscarAlunoCpf(String cpf) {
         for (Aluno aluno : alunos) {
             if (aluno.getCpf().equals(cpf)) {
@@ -57,7 +54,7 @@ public class Escola {
         return null;
     }
 
-    // Listar todas as pessoas (alunos e professores)
+    // Listar all
     public String listarPessoas() {
         StringBuilder sb = new StringBuilder();
         for (Aluno aluno : alunos) {
@@ -69,7 +66,7 @@ public class Escola {
         return sb.toString().isEmpty() ? "Não há pessoas cadastradas." : sb.toString();
     }
 
-    // Adicionar métodos para retornar a quantidade de alunos e professores
+    // Quantidade
     public int getQuantidadeAlunos() {
         return alunos.size();
 }
@@ -79,7 +76,7 @@ public int getQuantidadeProfessores() {
 }
 
 
-    // Métodos de Disciplinas (Adição e Busca)
+    // Adição/busca
     public boolean adicionarDisciplina(Disciplina disciplina) {
         for (Disciplina d : disciplinas) {
             if (d.getCodigo().equals(disciplina.getCodigo())) {
@@ -119,7 +116,7 @@ public int getQuantidadeProfessores() {
         return false;
     }
 
-    // Listar todas as disciplinas
+    // Listar disciplinas
     public String listarDisciplinas() {
         StringBuilder sb = new StringBuilder();
         for (Disciplina disciplina : disciplinas) {

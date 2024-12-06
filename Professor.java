@@ -1,4 +1,4 @@
-package Aulas_POO.IntroducaoClasses.Escola;
+package Escola.Escola;
 
 public class Professor extends Pessoa {
     private double salario;

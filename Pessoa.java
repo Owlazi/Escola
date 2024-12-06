@@ -1,11 +1,10 @@
-package Aulas_POO.IntroducaoClasses.Escola;
+package Escola.Escola;
 
 public abstract class Pessoa {
     private String nome;
     private String cpf;
     private String email;
 
-    // Construtor
     public Pessoa(String nome, String cpf, String email) {
         this.nome = nome;
         this.cpf = cpf;
@@ -37,7 +36,6 @@ public abstract class Pessoa {
         this.email = email;
     }
 
-    // Sobrescrita do toString
     @Override
     public String toString() {
         return "Nome: " + nome + ", CPF: " + cpf + ", E-mail: " + email;

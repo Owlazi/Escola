@@ -1,4 +1,4 @@
-package Aulas_POO.IntroducaoClasses.Escola;
+package Escola.Escola;
 
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ public class AppEscola {
 
             switch (opcao) {
                 case 1:
-                    // Menu de Aluno
+                    // Aluno
                     while (true) {
                         System.out.println("\nEscolha uma ação de Aluno:");
                         System.out.println("1. Adicionar Aluno");
@@ -100,7 +100,7 @@ public class AppEscola {
                     break;
 
                 case 2:
-                    // Menu de Professor
+                    //Professor
                     while (true) {
                         System.out.println("\nEscolha uma ação de Professor:");
                         System.out.println("1. Adicionar Professor");
@@ -158,7 +158,7 @@ public class AppEscola {
                     break;
 
                 case 3:
-                    // Menu de Disciplinas
+                    //Disciplinas
                     while (true) {
                         System.out.println("\nEscolha uma ação de Disciplina:");
                         System.out.println("1. Adicionar Disciplina");

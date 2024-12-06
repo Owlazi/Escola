@@ -1,5 +1,4 @@
-package Aulas_POO.IntroducaoClasses.Escola;
-
+package Escola.Escola;
 import java.util.ArrayList;
 
 public class Disciplina {
